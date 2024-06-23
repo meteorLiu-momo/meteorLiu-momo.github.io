@@ -1,0 +1,170 @@
+body{
+    background: url(./img/background_picture.jpg) center no-repeat ;
+    background-size: cover;
+    font-family:      Georgia, "Times New Roman", Times, serif;
+    font-size:        small;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+}
+
+header {  
+    background-color: #84ddb6;  
+    color: #fff;  
+    padding: 20px;  
+    display: flex;  /*flexbox布局*/
+    justify-content: space-between;  /* 水平方向上的对齐方式 */
+    align-items: center;  /* 垂直方向上的对齐方式 */
+}  
+/* 页眉头像图片样式 */  
+.profile-picture {  
+    width: 80px; /* 设置头像宽度，可根据需要调整 */  
+    height: 80px; /* 设置头像高度，保持与宽度一致以形成圆形 */  
+    overflow: hidden; /* 隐藏超出容器的内容 */  
+    margin-top: 10px; /* 调整图片与页眉其他内容的间距 */    
+}  
+.profile-picture img {  
+    width: 100%; /* 图片宽度设置为容器宽度 */  
+    height: auto; /* 图片高度自动以保持比例 */  
+    border-radius: 50%; /* 设置边框圆角为50%以形成圆形 */  
+    object-fit: cover; /* 确保图片覆盖整个容器，并保持其宽高比 */  
+}  
+/* 设置导航区样式 */
+header nav ul {  
+    list-style-type: none;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  /*flexbox布局*/
+}  
+header nav ul li {  
+    /* 设置右外边距 */
+    margin-right: 10px;  
+}  
+header nav ul li a {  
+    color: #fff;  
+    text-decoration: none;  
+    padding: 5px 10px;  
+    /* 将链接的显示类型设为块级元素，确保它们在导航栏中水平排列 */
+    display: block;  
+} 
+
+section{
+    margin: 5%;
+    padding:5%;
+}
+
+section#me-photo,section#description{
+    display: table-cell;
+}
+section#me-photo img{
+    width: 90%;
+    height: auto;
+}
+
+.portfolio-item{
+    width: 50%;
+    height: 80%;
+    display: table-cell;
+}
+.portfolio-item img{
+    width: 80%;
+    height: auto;
+    margin: 0% 5%;
+}
+div.tablecell{
+    display: table-cell;
+}
+section.main{
+    display: table-cell;
+}
+
+section div.image-container {  
+    width: 80%;
+    height: 70%;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;  
+    flex-wrap: wrap; /* 允许图片换行 */  
+    justify-content: space-between; /* 水平方向上的对齐方式 */  
+    align-items: flex-start; /* 垂直方向上的对齐方式 */  
+}  
+section div.image-container img {  
+    margin: 10px; /* 添加间距 */  
+    max-width: calc(25% - 20px); /* 每行显示4张图片，减去间距 */ 
+    height: auto;  /* 保持图片的比例 */
+}
+footer{
+    background-color: #84ddb6;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    margin-bottom: 0%;
+}
+
+.social-icons{
+    width: 40px; /* 设置头像宽度，可根据需要调整 */  
+    height: 40px; /* 设置头像高度，保持与宽度一致以形成圆形 */  
+    overflow: hidden; /* 隐藏超出容器的内容 */  
+    margin-top: 10px; /* 调整图片与页眉其他内容的间距 */
+}
+.social-icons img{
+    width: 100%; /* 图片宽度设置为容器宽度 */  
+    height: auto; /* 图片高度自动以保持比例 */  
+    border-radius: 50%; /* 设置边框圆角为50%以形成圆形 */  
+    object-fit: cover; /* 确保图片覆盖整个容器，并保持其宽高比 */ 
+}
+
+aside {  
+    background-color: #8491dd;  
+    color: #fff;  
+    width: 10%;
+    padding: 3%;     
+    display: table-cell;
+}  
+aside ul{
+    list-style-type: none;  
+    margin: 0;  
+    padding: 0; 
+}
+  
+form {
+	display: table;
+	padding: 10px;
+	border: thin dotted #7e7e7e;
+	background-color: #8ecae8;
+}
+div.tableRow {
+	display: table-row;
+}
+div.tableRow p {
+	display: table-cell;
+	vertical-align: top;
+	padding: 3px;
+}
+
+.resume-table {  
+    width: 90%;  
+    border-collapse: collapse;  /* 表格边框合并 */
+    margin: 5%;
+}  
+  
+.resume-table th,  
+.resume-table td {  
+    padding: 10px;  
+    text-align: left;  
+    border-bottom: 1px solid #ddd;  
+}  
+  
+.resume-table th {  
+    background-color: #f2f2f2;  
+}  
+  
+.resume-table ul {  
+    list-style-type: none;  
+    padding: 0;  
+}  
+  
+.resume-table li {  
+    margin-bottom: 5px;  
+}

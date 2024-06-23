@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+     <!-- 页眉区 -->
+     <header>  
+        <div class="profile-picture">  
+            <img src="./img/avatar.jpg" alt="avatar">  
+        </div> 
+        <div class="logo">       
+            <h1>欢迎来到我的主页</h1>  
+        </div>  
+        <div class="back_button">
+            <a href="./index.html">返回首页</a>
+        </div>
+    </header>
+
+    <section class="contact">  
+        <h3>联系我</h3>  
+        <form action="./index.html" method="post"> <!-- 点击提交后跳转回主页 -->  
+            <div class="tableRow">  
+                <p>
+                    <label for="name">姓名:</label>
+                </p>
+                <p>
+                    <input type="text" id="name" name="name" required>
+                </p>           
+            </div>  
+            <div class="tableRow">  
+                <p><label for="contact">联系电话:</label></p>  
+                <p><input type="tel" id="contact" name="contact" required></p>  
+            </div>  
+            <div class="tableRow">  
+                <p><label for="message">留言内容:</label></p>  
+                <p><textarea id="message" name="message" rows="4" cols="50" required></textarea></p>  
+            </div>  
+            <div class="tableRow">  
+                <p><button type="submit">提交</button></p>  
+            </div>  
+        </form>  
+        <div class="contact-info">  
+            <p>电话: 18270135339</p>  
+            <p>邮箱: 1223941072@qq.com</p>    
+        </div>  
+    </section>
+    <!-- 页脚区 -->
+    <footer>  
+        <p>版权所有 &copy; 2024 我的个人主页</p>  
+        <div class="social-icons">  
+            <!-- 社交媒体图标... -->  
+                <a href="https://github.com/meteorLiu-momo"><img src="./img/github_logo.jpeg" alt="github账号"></a>        
+        </div>  
+    </footer>
+</body>
+</html>
